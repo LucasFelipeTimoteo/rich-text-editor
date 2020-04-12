@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: serif;
+    font-family: Arial, Helvetica, sans-serif
     box-sizing: border-box;
 }
 
@@ -11,11 +11,13 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .editor {
+    position: relative;
     background-color: rgba(255, 255, 255, 0.877);
     height: 90vh;
     width: 95%
@@ -29,12 +31,11 @@ body {
     border: 1px solid rgb(197, 197, 197);
     border-bottom: none;
 }
-
 .button:hover {
     border: 1px solid  rgb(138, 138, 246);
 }
 
-.button:focus{
+.button:focus, .button:active{
     border: 1.5px solid blue;
 }
 
@@ -43,15 +44,27 @@ body {
     justify-content: center;
     height: 100%;
     width: 100%;
-    /* padding: 3px; */
     border: 1px solid rgb(197, 197, 197);
-    overflow: scroll;
 }
 
 .text {
-    height: 100%;
-    width: 95%;
+    height: 95%;
+    width: 100%;
+    padding-left: 40px;
     font-size: 4rem;
     outline: none;
+    overflow-y: scroll;
+}
 
+.dropdown-item {
+    font-size: 3rem;
+    line-height: 25px;
+    position: absolute;
+    padding: 3px;
+    right: 0px;
+    background: rgba(212, 212, 212, 0.857);
+}
+
+.hide {
+    display: none;
 }

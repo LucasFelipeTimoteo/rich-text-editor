@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,41 +8,60 @@
     <script src="https://kit.fontawesome.com/0db01ec726.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="editor">
 
         <div class="buttons">
-            <button class="button" data-command='justifyLeft'>
+            <button class="button" data-command='justifyLeft' accesskey="1">
                 <i class=' fas fa-align-left'></i>
             </button>
 
-            <button class="button" data-command='justifyCenter'>
+            <button class="button" data-command='justifyCenter' accesskey="2">
                 <i class=' fas fa-align-center'></i>
             </button>
-            
-            <button class="button" data-command="bold">
+
+            <button class="button" data-command="bold" accesskey="3">
                 <i class=' fas fa-bold'></i>
             </button>
 
-            <button class="button" data-command="italic">
+            <button class="button" data-command="italic" accesskey="4">
                 <i class=' fas fa-italic'></i>
             </button>
 
-            <button class="button" data-command="underline">
+            <button class="button" data-command="underline" accesskey="5">
                 <i class=' fas fa-underline'></i>
             </button>
-            
-            <button class="button" data-command="insertOrderedList">
+
+            <button class="button" data-command="insertOrderedList" accesskey="6">
                 <i class=' fas fa-list-ol'></i>
             </button>
 
-            <button class="button" data-command="insertUnorderedList">
+            <button class="button" data-command="insertUnorderedList" accesskey="7">
                 <i class=' fas fa-list-ul'></i>
             </button>
 
-            <button class="button" data-command="createlink">
+            <button class="button" data-command="createlink" accesskey="8">
                 <i class=' fas fa-link'></i>
             </button>
+
+            <button class="button" id="accesskeys" accesskey="9">
+                <i class="far fa-keyboard"></i>
+            </button>
+
+        </div>
+
+        <div class="hide dropdown-item">
+            <strong>Access Keys:</strong>
+            <p>ALT + 1: align left</p>
+            <p>ALT + 2: align center</p>
+            <p>ALT + 3: bold</p>
+            <p>ALT + 4: italic</p>
+            <p>ALT + 5: nuderline</p>
+            <p>ALT + 6: ordened list</p>
+            <p>ALT + 7: unordened list</p>
+            <p>ATL + 8: hiperlink</p>
+            <p>ALT + 9: access keys</p>
         </div>
 
         <div class="text-area">
@@ -50,6 +70,8 @@
 
     </div>
 
+
     <script src="actions.js"></script>
 </body>
+
 </html>

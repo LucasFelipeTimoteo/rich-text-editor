@@ -1,5 +1,5 @@
 const buttons = document.querySelectorAll('.button')
-const textArea = document.querySelectorAll('.text-area')
+const accesskey = document.getElementById('accesskeys')
 
 buttons.forEach(btn => {
 	btn.addEventListener('click', () => {
@@ -13,4 +13,9 @@ buttons.forEach(btn => {
 			document.execCommand(cmd, false, null);
 		}
 	})
+})
+
+accesskey.addEventListener('click', () => {
+    const dropdown = document.querySelector('.dropdown-item')
+    dropdown.classList.toggle('hide')
 })
