@@ -8,6 +8,7 @@ buttons.forEach(btn => {
 		if(cmd === 'createlink') {
             let url = prompt("Enter the link here: ", "http:\/\/");
             url === null ? url.value= '' : url
+
 			document.execCommand(cmd, false, url);
 		} else {
 			document.execCommand(cmd, false, null);
@@ -16,6 +17,6 @@ buttons.forEach(btn => {
 })
 
 accesskey.addEventListener('click', () => {
-    const dropdown = document.querySelector('.dropdown-item')
+    let dropdown = document.querySelector('.dropdown-item')
     dropdown.classList.toggle('hide')
 })
