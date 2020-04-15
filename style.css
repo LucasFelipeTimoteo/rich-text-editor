@@ -50,8 +50,9 @@ body {
 .text {
     height: 95%;
     width: 100%;
-    padding-left: 40px;
-    padding-right: 30px;
+    padding: 25px 30px 5px 40px;
+    /* padding-left: 40px;
+    padding-right: 30px; */
     font-size: 4rem;
     outline: none;
     overflow-y: scroll;
